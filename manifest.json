@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Quick Notes Collector",
   "version": "1.0",
-  "permissions": ["contextMenus", "storage", "scripting", "activeTab"],
+  "permissions": ["contextMenus", "storage", "scripting", "activeTab", "downloads"],
   "background": {
     "service_worker": "background.js"
   },
