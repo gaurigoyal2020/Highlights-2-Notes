@@ -2,9 +2,15 @@
   "manifest_version": 3,
   "name": "Quick Notes Collector",
   "version": "1.0",
+  "description" : "Quickly save selected text from any webpage and manage your notes",
   "permissions": ["contextMenus", "storage", "scripting", "activeTab", "downloads"],
   "background": {
     "service_worker": "background.js"
+  },
+  "icons" : {
+    "16" : "icon16.png",
+    "48" : "icon48.png",
+    "128" : "icon128.png"
   },
   "content_scripts": [
     {

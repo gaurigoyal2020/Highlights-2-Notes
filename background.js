@@ -6,11 +6,16 @@ chrome.runtime.onInstalled.addListener(() => {
   });
 });
 
+// Handle context menu clicks
 chrome.contextMenus.onClicked.addListener((info, tab) => {
-  if (info.menuItemId === "saveText") {
-    chrome.scripting.executeScript({
-      target: { tabId: tab.id },
-      files: ["content.js"]
-    });
+  if (info.menuItemId === "saveText" && info.selectionText) {
+    const selectedText = info.selectionText.trim();
+    
+    if (selectedText.length > 0) {
+      chrome.storage.local.get({ notes: [] }, (data) => {
+        let updatedNotes = [...data.notes, selectedText];
+        chrome.storage.local.set({ notes: updatedNotes });
+      });
+    }
   }
 });
