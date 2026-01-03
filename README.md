@@ -1,4 +1,4 @@
-# 📝 Quick Notes Collector
+# 📝 Highlights-2-Notes
 
 A lightweight Chrome extension that lets you quickly save selected text from any webpage and manage your collected notes with ease.
 
@@ -143,13 +143,6 @@ The extension captures text from multiple sources:
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🆘 Support
-
-If you encounter any issues or have feature requests:
-1. Check the [Issues](../../issues) page
-2. Create a new issue with detailed description
-3. Include your Chrome version and OS
 
 ## 🎉 Acknowledgments
 
